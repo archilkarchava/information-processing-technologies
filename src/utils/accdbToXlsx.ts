@@ -1,9 +1,23 @@
 import * as fs from 'fs';
 import * as JSZip from 'jszip';
+import * as path from 'path';
 import * as request from 'request';
 import { promisify } from 'util';
+import * as XLSX from 'xlsx';
 
 const requestPromises = promisify(request);
+
+function mergeFiles(files: { name: string; buffer: Buffer }[]) {
+  const workbook = XLSX.utils.book_new();
+  files.forEach(file => {
+    XLSX.utils.book_append_sheet(
+      workbook,
+      XLSX.read(file.buffer, { type: 'buffer' }).Sheets['First Sheet'],
+      file.name,
+    );
+  });
+  return workbook;
+}
 
 export default async function accdbToXlsx(
   inputFilePath: string,
@@ -27,17 +41,33 @@ export default async function accdbToXlsx(
     const res = await requestPromises(options);
     try {
       const zip = await JSZip.loadAsync(res.body);
-      const [pTable, sTable, spTable] = await Promise.all([
-        zip.file('P.xlsx').async('nodebuffer'),
-        zip.file('S.xlsx').async('nodebuffer'),
-        zip.file('SP.xlsx').async('nodebuffer'),
-      ]);
+      // const filePromises: [string, Promise<Buffer>][] = []
+      const filePromises: {
+        name: string;
+        bufferPromise: Promise<Buffer>;
+      }[] = [];
+      zip.forEach((relativePath, file) => {
+        if (!file.name.startsWith('~TMP')) {
+          filePromises.push({
+            name: file.name,
+            bufferPromise: zip.file(relativePath).async('nodebuffer'),
+          });
+        }
+      });
       try {
-        await Promise.all([
-          fs.promises.writeFile(`${outputDir}/P.xlsx`, pTable),
-          fs.promises.writeFile(`${outputDir}/S.xlsx`, sTable),
-          fs.promises.writeFile(`${outputDir}/SP.xlsx`, spTable),
-        ]);
+        const files = await Promise.all(
+          filePromises.map(filePromise => {
+            return filePromise.bufferPromise.then(buffer => {
+              return {
+                name: filePromise.name,
+                buffer,
+              };
+            });
+          }),
+        );
+        const mergedXlsx = mergeFiles(files);
+        const outputFileName = path.basename(inputFilePath, '.accdb');
+        XLSX.writeFile(mergedXlsx, `${outputDir}/${outputFileName}.xlsx`);
       } catch (e) {
         throw new Error(e);
       }
