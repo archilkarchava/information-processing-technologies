@@ -14,8 +14,9 @@
   },
   "devDependencies": {
     "@types/dotenv": "^8.2.0",
+    "@types/jszip": "^3.1.7",
     "@types/node": "^13.7.0",
-    "@types/node-xlsx": "^0.12.1",
+    "@types/request": "^2.48.4",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "cross-env": "^7.0.0",
@@ -31,10 +32,11 @@
   },
   "dependencies": {
     "dotenv": "^8.2.0",
-    "node-adodb": "^5.0.2",
-    "node-xlsx": "^0.15.0",
+    "jszip": "^3.2.2",
     "pg": "^7.18.1",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.22"
+    "request": "^2.88.0",
+    "typeorm": "^0.2.22",
+    "xlsx": "^0.15.5"
   }
 }
