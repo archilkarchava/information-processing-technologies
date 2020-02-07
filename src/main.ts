@@ -3,6 +3,7 @@ import * as fs from 'fs';
 import 'reflect-metadata';
 import createTypeormConnection from './createTypeormConnection';
 import accdbToXlsx from './utils/accdbToXlsx';
+import xlsxToJson from './utils/xlsxToJson';
 
 async function main() {
   try {
@@ -21,8 +22,11 @@ async function main() {
     throw new Error(e);
   }
   try {
-    await accdbToXlsx('./data/Branch_1.accdb', './data');
-    // xlsxToJson();
+    await accdbToXlsx('./data/Branch_1.accdb');
+    await Promise.all([
+      xlsxToJson('./data/Branch_1.xlsx'),
+      xlsxToJson('./data/Branch_2.xlsx'),
+    ]);
   } catch (e) {
     throw new Error(e);
   }
