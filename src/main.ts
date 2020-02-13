@@ -1,18 +1,14 @@
 import * as dotenv from 'dotenv';
-import * as fs from 'fs';
 import 'reflect-metadata';
 import createTypeormConnection from './createTypeormConnection';
-import accdbToXlsx from './utils/accdbToXlsx';
-import xlsxToJson from './utils/xlsxToJson';
+import Converter from './modules/converter';
 
 async function main() {
   try {
-    const config = dotenv.parse(
-      fs.readFileSync(`.env.${process.env.NODE_ENV}`),
-    );
-    await createTypeormConnection(config);
+    dotenv.config();
+    await createTypeormConnection();
     // try {
-    //       await connection.query(`DROP FUNCTION check_weight_constraint(integer, integer, float) RETURNS boolean
+    //   await connection.query(`CREATE OR REPLACE FUNCTION check_weight_constraint(integer, integer, float) RETURNS boolean
     //   AS $$ SELECT (SELECT "Weight" FROM "P" WHERE "PID" = $2) * $1 <= $3 $$
     //   LANGUAGE SQL;`);
     // } catch (e) {
@@ -22,11 +18,9 @@ async function main() {
     throw new Error(e);
   }
   try {
-    await accdbToXlsx('./data/Branch_1.accdb');
-    await Promise.all([
-      xlsxToJson('./data/Branch_1.xlsx'),
-      xlsxToJson('./data/Branch_2.xlsx'),
-    ]);
+    await Converter.accdbToXlsx('./data/Branch_1.accdb');
+    Converter.xlsxToJson('./data/Branch_1.xlsx');
+    Converter.xlsxToJson('./data/Branch_2.xlsx');
   } catch (e) {
     throw new Error(e);
   }

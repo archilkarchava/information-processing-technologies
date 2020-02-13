@@ -1,17 +1,14 @@
-import { DotenvParseOutput } from 'dotenv/types';
 import { createConnection } from 'typeorm';
 import { PostgresConnectionOptions } from 'typeorm/driver/postgres/PostgresConnectionOptions';
 
-export default async function createTypeormConnection(
-  config: DotenvParseOutput,
-) {
+export default async function createTypeormConnection() {
   const connectionOptions: PostgresConnectionOptions = {
     type: 'postgres',
-    host: config.TYPEORM_HOST,
-    port: Number(config.TYPEORM_PORT),
-    username: config.TYPEORM_USERNAME,
-    password: config.TYPEORM_PASSWORD,
-    database: config.TYPEORM_DATABASE,
+    host: process.env.TYPEORM_HOST,
+    port: Number(process.env.TYPEORM_PORT),
+    username: process.env.TYPEORM_USERNAME,
+    password: process.env.TYPEORM_PASSWORD,
+    database: process.env.TYPEORM_DATABASE,
     synchronize: process.env.NODE_ENV !== 'production',
     logging: process.env.NODE_ENV !== 'production',
     entities:

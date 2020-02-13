@@ -27,14 +27,14 @@ export default class Supply {
   shipDate: Date;
 
   @ManyToOne(
-    type => Detail,
+    _type => Detail,
     detail => detail.supplies,
   )
   @JoinColumn({ name: 'PID' })
   detail: Detail;
 
   @ManyToOne(
-    type => Provider,
+    _type => Provider,
     provider => provider.supplies,
   )
   @JoinColumn({ name: 'SID' })

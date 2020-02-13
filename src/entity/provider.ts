@@ -28,7 +28,7 @@ export default class Provider {
   risk: number;
 
   @OneToMany(
-    type => Supply,
+    _type => Supply,
     supply => supply.provider,
   )
   supplies: Supply[];

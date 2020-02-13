@@ -28,7 +28,7 @@ export default class Detail {
   weight: number;
 
   @OneToMany(
-    type => Supply,
+    _type => Supply,
     supply => supply.detail,
   )
   supplies: Supply[];
