@@ -12,9 +12,9 @@ export default async function createTypeormConnection() {
     synchronize: process.env.NODE_ENV !== 'production',
     logging: process.env.NODE_ENV !== 'production',
     entities:
-      process.env.NODE_ENV === 'development'
-        ? ['src/entity/*.ts']
-        : ['dist/entity/*.js'],
+      process.env.NODE_ENV === 'production'
+        ? ['dist/entity/*.js']
+        : ['src/entity/*.ts'],
   };
   return createConnection(connectionOptions);
 }

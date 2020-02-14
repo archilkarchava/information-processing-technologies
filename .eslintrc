@@ -22,15 +22,16 @@
     }
   },
   "ignorePatterns": ["dist/", "node_modules/"],
-  "rules": {},
+  "rules": {
+    "no-console": "off",
+    "import/extensions": "off",
+    "no-unused-vars": "off"
+  },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
       "rules": {
-        "no-unused-vars": ["off"],
-        "no-undef": ["off"],
-        "import/no-unresolved": ["off"],
-        "import/extensions": ["off"]
+        "import/no-unresolved": "off"
       }
     }
   ]

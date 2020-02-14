@@ -38,9 +38,12 @@ export default class Converter {
       },
     };
     try {
+      console.log(`Uploading ${inputFilePath} to external converter api...`);
       const res = await requestPromises(options);
       try {
+        console.log('Unzipping xlsx...');
         const zip = await JSZip.loadAsync(res.body);
+        console.log('Merging xlsx into one file...');
         const namedBufferPromises: {
           name: string;
           bufferPromise: Promise<Buffer>;
@@ -66,8 +69,11 @@ export default class Converter {
           );
           const mergedXlsx = this.mergeBuffersToWorkbook(namedBuffers);
           const outputDir = path.dirname(inputFilePath);
-          const outputFileName = path.basename(inputFilePath, '.accdb');
-          XLSX.writeFile(mergedXlsx, `${outputDir}/${outputFileName}.xlsx`);
+          const fileName = path.basename(inputFilePath, '.accdb');
+          XLSX.writeFile(mergedXlsx, `${outputDir}/${fileName}.xlsx`);
+          console.log(
+            `Converted ${inputFilePath} into ${outputDir}/${fileName}.xlsx`,
+          );
         } catch (e) {
           throw new Error(e);
         }
@@ -80,8 +86,8 @@ export default class Converter {
   }
 
   public static xlsxToJson(inputFilePath: string) {
-    const inputDir = path.dirname(inputFilePath);
-    const inputFileName = path.basename(inputFilePath, '.xlsx');
+    const outputDir = path.dirname(inputFilePath);
+    const fileName = path.basename(inputFilePath, '.xlsx');
     const xlsxWorkbook = XLSX.readFile(inputFilePath);
     const fileWritePromises: Promise<void>[] = [];
     const jsonWorkbook = {};
@@ -94,9 +100,12 @@ export default class Converter {
       fileWritePromises.push();
     });
     fs.writeFileSync(
-      `${inputDir}/${inputFileName}.json`,
+      `${outputDir}/${fileName}.json`,
       JSON.stringify(jsonWorkbook, null, 2),
       'utf8',
+    );
+    console.log(
+      `Converted ${inputFilePath} into ${outputDir}/${fileName}.json`,
     );
   }
 }
