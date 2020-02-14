@@ -10,7 +10,7 @@ export default async function createTypeormConnection() {
     password: process.env.TYPEORM_PASSWORD,
     database: process.env.TYPEORM_DATABASE,
     synchronize: process.env.NODE_ENV !== 'production',
-    logging: process.env.NODE_ENV !== 'production',
+    logging: false,
     entities:
       process.env.NODE_ENV === 'production'
         ? ['dist/entity/*.js']

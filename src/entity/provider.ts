@@ -22,7 +22,7 @@ export default class Provider {
   city: string;
 
   @Column({ name: 'Address', type: 'char', length: 50 })
-  address: boolean;
+  address: string;
 
   @Column({ name: 'Risk', type: 'int' })
   risk: number;

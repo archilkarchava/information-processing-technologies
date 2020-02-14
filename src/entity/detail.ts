@@ -22,7 +22,7 @@ export default class Detail {
   city: string;
 
   @Column({ name: 'Color', type: 'char', length: 20 })
-  color: boolean;
+  color: string;
 
   @Column({ name: 'Weight', type: 'float' })
   weight: number;
