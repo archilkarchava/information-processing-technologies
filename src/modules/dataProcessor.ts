@@ -119,6 +119,9 @@ export default class DataProcessor {
     )[0];
     const providerRepository = getRepository(Provider);
     const providerSavePromises = data.S.map(rawProvider => {
+      if (!DataProcessor.clearStr(rawProvider.SName)) {
+        return null;
+      }
       const provider: DeepPartial<Provider> = {
         id: Number(rawProvider.SID),
         address: DataProcessor.clearStr(rawProvider.Address),
@@ -146,6 +149,9 @@ export default class DataProcessor {
     )[0];
     const detailRepository = getRepository(Detail);
     const detailSavePromises = data.P.map(rawDetail => {
+      if (!DataProcessor.clearStr(rawDetail.PName)) {
+        return null;
+      }
       const detail: DeepPartial<Detail> = {
         id: Number(rawDetail.PID),
         city: rawDetail.PCity
