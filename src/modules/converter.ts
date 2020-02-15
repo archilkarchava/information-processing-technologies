@@ -17,7 +17,7 @@ export default class Converter {
       XLSX.utils.book_append_sheet(
         workbook,
         XLSX.read(file.buffer, { type: 'buffer' }).Sheets['First Sheet'],
-        file.name,
+        path.basename(file.name, '.xlsx'),
       );
     });
     return workbook;
@@ -84,8 +84,7 @@ export default class Converter {
   public static xlsxToJson(inputFilePath: string) {
     const outputDir = path.dirname(inputFilePath);
     const fileName = path.basename(inputFilePath, '.xlsx');
-    const xlsxWorkbook = XLSX.readFile(inputFilePath);
-    const fileWritePromises: Promise<void>[] = [];
+    const xlsxWorkbook = XLSX.readFile(inputFilePath, { cellDates: true });
     const jsonWorkbook = {};
     xlsxWorkbook.SheetNames.forEach(sheetNameWithExt => {
       const jsonSheet = XLSX.utils.sheet_to_json(
@@ -93,7 +92,6 @@ export default class Converter {
       );
       const sheetName = path.basename(sheetNameWithExt, '.xlsx');
       jsonWorkbook[sheetName] = jsonSheet;
-      fileWritePromises.push();
     });
     fs.writeFileSync(
       `${outputDir}/${fileName}.json`,
