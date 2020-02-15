@@ -106,7 +106,7 @@ export default class DataProcessor {
   }
 
   private static clearStr(str: string) {
-    return str.replace(/\uFFFD/g, '');
+    return str && str.replace(/\uFFFD/g, '');
   }
 
   public async populate() {
@@ -119,9 +119,6 @@ export default class DataProcessor {
     )[0];
     const providerRepository = getRepository(Provider);
     const providerSavePromises = data.S.map(rawProvider => {
-      if (!DataProcessor.clearStr(rawProvider.SName)) {
-        return null;
-      }
       const provider: DeepPartial<Provider> = {
         id: Number(rawProvider.SID),
         address: DataProcessor.clearStr(rawProvider.Address),
@@ -138,9 +135,7 @@ export default class DataProcessor {
                 DataProcessor.clearStr(rawProvider.SCity),
               ).avgRisk,
       };
-      return providerRepository
-        .save(provider)
-        .catch(e => console.log(`Couldn't save provider. ${e}`));
+      return providerRepository.save(provider);
     });
     const mostPopularDetailCity = [
       ...dataAnalysis.detailAnalysisMap.entries(),
@@ -166,15 +161,8 @@ export default class DataProcessor {
                 DataProcessor.clearStr(rawDetail.PCity),
               ).avgWeight,
       };
-      return detailRepository
-        .save(detail)
-        .catch(e => console.log(`Couldn't save detail. ${e}`));
+      return detailRepository.save(detail);
     });
-    // const supplyTableWithPCity = data.SP.map(supply => {
-    //   const supplyCity = data.P.find(detail => detail.PID === supply.PID)
-    //     ?.PCity;
-    //   return { ...supply, PCity: supplyCity };
-    // });
     const supplyRepository = getRepository(Supply);
     const supplySavePromises = data.SP.map(rawSupply => {
       const supplyCity = DataProcessor.clearStr(
@@ -194,17 +182,19 @@ export default class DataProcessor {
         detail: { id: Number(rawSupply.PID) },
         provider: { id: Number(rawSupply.SID) },
       };
-      return supplyRepository
-        .save(supply)
-        .catch(e => console.log(`Couldn't save supply. ${e}`));
+      return supplyRepository.save(supply);
     });
-    console.log('Saving entities to database...');
-    await Promise.all([
-      providerSavePromises,
-      detailSavePromises,
-      supplySavePromises,
+    console.log(
+      `Populating the database with data from ${this.inputFilePath}...`,
+    );
+    await (Promise as any).allSettled([
+      ...providerSavePromises,
+      ...detailSavePromises,
+      ...supplySavePromises,
     ]);
-    console.log('Finished populating database.');
+    console.log(
+      `Finished populating the database with data from ${this.inputFilePath}...`,
+    );
   }
 
   private analyze() {
@@ -218,8 +208,9 @@ export default class DataProcessor {
       'Weight',
     );
     const supplyTableWithPCity = data.SP.map(supply => {
-      const supplyCity = data.P.find(detail => detail.PID === supply.PID)
-        ?.PCity;
+      const supplyCity = DataProcessor.clearStr(
+        data.P.find(detail => detail.PID === supply.PID)?.PCity,
+      );
       return { ...supply, PCity: supplyCity };
     });
     const supplyCityCount = DataProcessor.countProperty(

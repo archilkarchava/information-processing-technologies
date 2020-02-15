@@ -33,6 +33,7 @@
     "typescript": "^3.7.5"
   },
   "dependencies": {
+    "await-to-js": "^2.1.1",
     "dotenv": "^8.2.0",
     "jszip": "^3.2.2",
     "lodash": "^4.17.15",

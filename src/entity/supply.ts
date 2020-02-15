@@ -12,7 +12,7 @@ import Provider from './provider';
 @Entity({ name: 'SP' })
 @Check(`"Quantity" > 0`)
 @Check(`"Price" > 0`)
-@Check(`check_weight_constraint("Quantity", "PID", 1500)`)
+@Check(`total_weight_less_than("Quantity", "PID", 1500)`)
 export default class Supply {
   @PrimaryGeneratedColumn({ name: 'SPID', type: 'int' })
   id: number;
