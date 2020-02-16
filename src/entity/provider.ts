@@ -3,7 +3,7 @@ import {
   Column,
   Entity,
   OneToMany,
-  PrimaryGeneratedColumn,
+  PrimaryColumn,
   Unique,
 } from 'typeorm';
 import Supply from './supply';
@@ -12,7 +12,7 @@ import Supply from './supply';
 @Unique(['name', 'address', 'city'])
 @Check(`"Risk" in (1, 2, 3)`)
 export default class Provider {
-  @PrimaryGeneratedColumn({ name: 'SID', type: 'int' })
+  @PrimaryColumn({ name: 'SID', type: 'int' })
   id: number;
 
   @Column({ name: 'SName', type: 'char', length: 20, nullable: false })

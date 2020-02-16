@@ -4,7 +4,7 @@ import {
   Entity,
   JoinColumn,
   ManyToOne,
-  PrimaryGeneratedColumn,
+  PrimaryColumn,
 } from 'typeorm';
 import Detail from './detail';
 import Provider from './provider';
@@ -14,7 +14,7 @@ import Provider from './provider';
 @Check(`"Price" > 0`)
 @Check(`total_weight_less_than("Quantity", "PID", 1500)`)
 export default class Supply {
-  @PrimaryGeneratedColumn({ name: 'SPID', type: 'int' })
+  @PrimaryColumn({ name: 'SPID', type: 'int' })
   id: number;
 
   @Column({ name: 'Quantity', type: 'int' })

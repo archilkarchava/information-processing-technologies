@@ -3,7 +3,7 @@ import {
   Column,
   Entity,
   OneToMany,
-  PrimaryGeneratedColumn,
+  PrimaryColumn,
   Unique,
 } from 'typeorm';
 import Supply from './supply';
@@ -12,7 +12,7 @@ import Supply from './supply';
 @Check(`"Weight" > 0`)
 @Unique(['name', 'city', 'color'])
 export default class Detail {
-  @PrimaryGeneratedColumn({ name: 'PID', type: 'int' })
+  @PrimaryColumn({ name: 'PID', type: 'int' })
   id: number;
 
   @Column({ name: 'PName', type: 'char', length: 20, nullable: false })

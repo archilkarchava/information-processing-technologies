@@ -4,31 +4,7 @@ import { Connection, DeepPartial } from 'typeorm';
 import Detail from '../entity/detail';
 import Provider from '../entity/provider';
 import Supply from '../entity/supply';
-
-interface InputData {
-  P: Array<{
-    PID: string | number;
-    PName: string;
-    PCity: string;
-    Color: string;
-    Weight: string;
-  }>;
-  S: Array<{
-    SID: string | number;
-    SName: string;
-    SCity: string;
-    Address: string;
-    Risk: string | number;
-  }>;
-  SP: Array<{
-    SPID: string | number;
-    PID: string | number;
-    SID: string | number;
-    Quantity: string | number;
-    Price: string;
-    ShipDate: string;
-  }>;
-}
+import RawJsonBranchData from '../interfaces/rawJsonBranchData';
 
 type ProviderCityAnalysis = Map<
   string,
@@ -51,7 +27,7 @@ type DetailCityAnalysis = Map<
 export default class DataProcessor {
   inputFilePath: string;
 
-  rawData: InputData;
+  rawData: RawJsonBranchData;
 
   dbConnection: Connection;
 
@@ -61,7 +37,7 @@ export default class DataProcessor {
     this.rawData = this.readJson();
   }
 
-  private readJson() {
+  private readJson(): RawJsonBranchData {
     return JSON.parse(fs.readFileSync(this.inputFilePath, 'utf8'));
   }
 
@@ -106,9 +82,6 @@ export default class DataProcessor {
     )[0];
     const detailRepository = this.dbConnection.getRepository(Detail);
     const detailSavePromises = data.P.map(rawDetail => {
-      if (!DataProcessor.fixStrValue(rawDetail.PName)) {
-        return null;
-      }
       const detail: DeepPartial<Detail> = {
         id: Number(rawDetail.PID),
         city: rawDetail.PCity
@@ -194,7 +167,7 @@ export default class DataProcessor {
 
   // Removes entries with negative Weight, Quantity or Price
   private removeNegativeValues() {
-    const data: InputData = {
+    const data: RawJsonBranchData = {
       S: this.rawData.S,
       P: this.rawData.P.filter(detail => Number(detail.Weight) > 0),
       SP: this.rawData.SP.filter(
@@ -202,6 +175,49 @@ export default class DataProcessor {
       ),
     };
     return data;
+  }
+
+  /**
+   * incrementIdsInRawDataBy: Increments each id in rawData by a given value
+   */
+  public incrementIdsInRawDataBy(
+    IncValPID?: number,
+    IncValSID?: number,
+    IncValSPID?: number,
+  ) {
+    /* eslint-disable no-param-reassign */
+    if (IncValSID) {
+      this.rawData.S.forEach(provider => {
+        provider.SID = Number(provider.SID) + IncValSID;
+      });
+    }
+    if (IncValPID) {
+      this.rawData.P.forEach(detail => {
+        detail.PID = Number(detail.PID) + IncValPID;
+      });
+    }
+    if (IncValSPID) {
+      this.rawData.SP.forEach(supply => {
+        supply.SPID = Number(supply.SPID) + IncValSPID;
+        if (IncValSID) {
+          const oldSID = Number(supply.SID);
+          supply.SID = Number(
+            this.rawData.S.find(
+              provider => Number(provider.SID) === oldSID + IncValSID,
+            ).SID,
+          );
+        }
+        if (IncValPID) {
+          const oldPID = Number(supply.PID);
+          supply.PID = Number(
+            this.rawData.P.find(
+              detail => Number(detail.PID) === oldPID + IncValPID,
+            ).PID,
+          );
+        }
+      });
+    }
+    /* eslint-enable no-param-reassign */
   }
 
   private analyze() {
