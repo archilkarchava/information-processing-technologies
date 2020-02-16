@@ -1,0 +1,2036 @@
+[
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 17618.04
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 104704.7
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 3746.05
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 104291.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "Кварц               ",
+    "TotalPrice": 6557.88
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 15074.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 1966.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 4648.82
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 4084.40784968685
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 86304.19
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 2462.61
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 114577.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 36638.9360444444
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": "Феникс              ",
+    "TotalPrice": 10398.24
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Барнаул             ",
+    "SName": null,
+    "TotalPrice": 513074.173894131
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 118391.76
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 2574.6
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 10172.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 38284.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 26256.3
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 97685.28
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 583.62
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 12804.05
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 53692.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 122089.11
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 5024.25
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 610.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Феникс              ",
+    "TotalPrice": 1931.49
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": "Янус                ",
+    "TotalPrice": 167864.52
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Владивосток         ",
+    "SName": null,
+    "TotalPrice": 657965.93
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "Viva                ",
+    "TotalPrice": 87989.49
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 13652.5
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 6206.90019379845
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 3686.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 183442.7
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 11780.7125248509
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 81976.79
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "Палекс              ",
+    "TotalPrice": 8691.29
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "Райдос              ",
+    "TotalPrice": 19085.44
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 12524.42
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 91633.12
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Волгоград           ",
+    "SName": null,
+    "TotalPrice": 520669.762718649
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 7274.74
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 3969.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 134243.34
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 22161.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 102079.34
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 60004.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 17532.48
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 7773.76
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 422.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "Райдос              ",
+    "TotalPrice": 325411.77
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 403.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": "Янус                ",
+    "TotalPrice": 133109.1
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Воронеж             ",
+    "SName": null,
+    "TotalPrice": 814386.6
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "eVolt               ",
+    "TotalPrice": 4221.23
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 6355.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 5999.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 18876.76
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Палекс              ",
+    "TotalPrice": 1217.48
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 99307.24
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 214320.12
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Феникс              ",
+    "TotalPrice": 12062.52
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": "Янус                ",
+    "TotalPrice": 46992.96
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Екатеринбург        ",
+    "SName": null,
+    "TotalPrice": 409353.29
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "eVolt               ",
+    "TotalPrice": 54930.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 443856.27
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 19259.19
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 258077.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 22198.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 171259.94
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 140387.06
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 48788.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 226903.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Палекс              ",
+    "TotalPrice": 263856
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 172423.62
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 4067.91
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": "Янус                ",
+    "TotalPrice": 5049.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ижевск              ",
+    "SName": null,
+    "TotalPrice": 1831058.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "eVolt               ",
+    "TotalPrice": 19009.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 7557.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "Кварц               ",
+    "TotalPrice": 144178.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 212538.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 3636.78
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "Палекс              ",
+    "TotalPrice": 15304.5
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "Райдос              ",
+    "TotalPrice": 7062.25
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": "Янус                ",
+    "TotalPrice": 3531.84
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Иркутск             ",
+    "SName": null,
+    "TotalPrice": 412819.88
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 8324.37
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 193785.92
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 2512.79
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 1105.44
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 5147.94
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 129619.14
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 28489.5
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 2593.47
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "Палекс              ",
+    "TotalPrice": 16877.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": "Райдос              ",
+    "TotalPrice": 150475.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Казань              ",
+    "SName": null,
+    "TotalPrice": 538930.97
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "eVolt               ",
+    "TotalPrice": 12975.3
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 116361.63
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 4274.71
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 284957.04
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 5808.6
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "Кварц               ",
+    "TotalPrice": 458
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 141050.26
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 4209.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 106382.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 216784.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 4455.1
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 20408.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 39041.52
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "Палекс              ",
+    "TotalPrice": 6318.49
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 3121.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": "Феникс              ",
+    "TotalPrice": 115170
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Краснодар           ",
+    "SName": null,
+    "TotalPrice": 1081777.86
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "Viva                ",
+    "TotalPrice": 80225.07
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 55642.5
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 13618.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 29492.74
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 9899.03
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 22417.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 100310.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 7172.48
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 29055.25
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 15027.87
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 123008.68
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "Райдос              ",
+    "TotalPrice": 5946.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 6562.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 3971.76
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Красноярск          ",
+    "SName": null,
+    "TotalPrice": 502350.55
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "eVolt               ",
+    "TotalPrice": 25245.3
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "Viva                ",
+    "TotalPrice": 393361.22
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 12389.56
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 471.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 12676.5732467533
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 189398.37
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 111847.68
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 1353.87
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 7299.57
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 19053.84
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 450703.92
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "Феникс              ",
+    "TotalPrice": 38114.7
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": "Янус                ",
+    "TotalPrice": 15187.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Москва              ",
+    "SName": null,
+    "TotalPrice": 1277103.55324675
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 205688.55
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 304120.98
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 113597.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "Кварц               ",
+    "TotalPrice": 42301.44
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 868.53
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 5998.14
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 70059.36
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 1530.36
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 188560.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 106109.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": "Феникс              ",
+    "TotalPrice": 66953.25
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новгород            ",
+    "SName": null,
+    "TotalPrice": 1105787.47
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "eVolt               ",
+    "TotalPrice": 14512.05
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "Viva                ",
+    "TotalPrice": 104657
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 255742.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 32201.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 4978.53
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "Кварц               ",
+    "TotalPrice": 57834
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 13572.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 5152.62
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 17239.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 15892.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": "Янус                ",
+    "TotalPrice": 47056.81
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Новосибирск         ",
+    "SName": null,
+    "TotalPrice": 568840.07
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 293100.45
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "Кварц               ",
+    "TotalPrice": 322032.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 11586.12
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 30695.28
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 8033.54
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 258376.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 41483.7
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Омск                ",
+    "SName": null,
+    "TotalPrice": 965307.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 167935.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 3387.85
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 9496.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "Палекс              ",
+    "TotalPrice": 14698.17
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "Райдос              ",
+    "TotalPrice": 39643.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 13016.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Пермь               ",
+    "SName": null,
+    "TotalPrice": 248177.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 244166.28
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 1188
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 92232.06
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 118324.74
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 15088.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 44168.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "Палекс              ",
+    "TotalPrice": 3433.75
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 24224.43
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "Феникс              ",
+    "TotalPrice": 22486.89
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": "Янус                ",
+    "TotalPrice": 4188.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "РостовнаДону        ",
+    "SName": null,
+    "TotalPrice": 569502.02
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 3492.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 11328.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 942
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 672482.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 76340.49
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 4932.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 77009.13
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 14572.35
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "Райдос              ",
+    "TotalPrice": 215312.5
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 13362.6
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 1093.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Самара              ",
+    "SName": null,
+    "TotalPrice": 1090868.69
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 625.14
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 261361.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 23962.86
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 16028.41
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 68281.71
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 19629.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 26506.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 7850.7
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "Палекс              ",
+    "TotalPrice": 16064.55
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 99792.77
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 219999.99
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "СанктПетербург      ",
+    "SName": null,
+    "TotalPrice": 760102.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Viva                ",
+    "TotalPrice": 26531.34
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 4551.45
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 26275.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 8072.34
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Кварц               ",
+    "TotalPrice": 47045.78
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Мегаком             ",
+    "TotalPrice": 44504.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 261717.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 29068.13
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 11416.47
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 66443.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Палекс              ",
+    "TotalPrice": 15924.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Райдос              ",
+    "TotalPrice": 206799.35
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 5522.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 45674.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": "Янус                ",
+    "TotalPrice": 6067.68
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Саратов             ",
+    "SName": null,
+    "TotalPrice": 805614.56
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "Viva                ",
+    "TotalPrice": 8340.9
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 14435.62
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 275096.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "Кварц               ",
+    "TotalPrice": 213679.57
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 27123.42
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 25230.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 11600.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 40489.32
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 6683.62
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 4122.06
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "Райдос              ",
+    "TotalPrice": 288517.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 36789.6
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": "Феникс              ",
+    "TotalPrice": 83599.82
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тольятти            ",
+    "SName": null,
+    "TotalPrice": 1035708.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "eVolt               ",
+    "TotalPrice": 1179.33
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "Viva                ",
+    "TotalPrice": 142566.09
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 79389.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 53291.59
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 31580.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 10683.84
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 114958.42
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "Кварц               ",
+    "TotalPrice": 3102
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 6421.68
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 5297.45151241535
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 18162.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 1558.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "Синапсис            ",
+    "TotalPrice": 193167.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 22882.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Тюмень              ",
+    "SName": null,
+    "TotalPrice": 684241.661512415
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 16961
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 118957.41
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 24712.26
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "Мотэк99             ",
+    "TotalPrice": 9427.47
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 82910.45
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 169106.31
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 13699.95
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 72966.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 114429.67
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 130331.76
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 681.56
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "Палекс              ",
+    "TotalPrice": 98473.18
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": "Райдос              ",
+    "TotalPrice": 32932.17
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ульяновск           ",
+    "SName": null,
+    "TotalPrice": 885589.85
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "eVolt               ",
+    "TotalPrice": 81801.28
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 118333.1
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 17979.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 7836.15
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "Кварц               ",
+    "TotalPrice": 114272.34
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 121748.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 7041
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "Палекс              ",
+    "TotalPrice": 14126.66
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "Райдос              ",
+    "TotalPrice": 67093.29
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 3117.45
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Уфа                 ",
+    "SName": null,
+    "TotalPrice": 553349.58
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "eVolt               ",
+    "TotalPrice": 3455.43
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 81695.36
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 9916.2
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 21098.53
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 37437.84
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "Кварц               ",
+    "TotalPrice": 136570
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 15744.8
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 30451.27
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 72259.04
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 93550.45
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 3650.24
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Челябинск           ",
+    "SName": null,
+    "TotalPrice": 505829.16
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "Viva                ",
+    "TotalPrice": 26017.29
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 30955.05
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 3602.72
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 4946.06
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 933.64
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 147.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "Русинтек            ",
+    "TotalPrice": 215429.43
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": "СлавКабель          ",
+    "TotalPrice": 21522.63
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": "Ярославль           ",
+    "SName": null,
+    "TotalPrice": 303554.47
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": null,
+    "TotalPrice": 18641965.491372
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ГК \"Эталон\"         ",
+    "TotalPrice": 895995.57
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Viva                ",
+    "TotalPrice": 869688.4
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Синапсис            ",
+    "TotalPrice": 814909.09
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"Сварожич\"      ",
+    "TotalPrice": 892304.46
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Мегаком             ",
+    "TotalPrice": 261313.74
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "СлавКабель          ",
+    "TotalPrice": 269716.27
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"ВиКинжиниринг\" ",
+    "TotalPrice": 491831.88
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Янус                ",
+    "TotalPrice": 429048.59
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"Самоходов\"     ",
+    "TotalPrice": 733666.04
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ЗетСтоун            ",
+    "TotalPrice": 246743.510193798
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"Абсолют\"       ",
+    "TotalPrice": 596456.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"Слог\"          ",
+    "TotalPrice": 201540.012524851
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ВАЛСИ               ",
+    "TotalPrice": 803344.82
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Русинтек            ",
+    "TotalPrice": 1411628.60604444
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Мотэк99             ",
+    "TotalPrice": 468202.08
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"ЭльтадорМ\"     ",
+    "TotalPrice": 659560.65
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"ИРБИСВЕНТ\"     ",
+    "TotalPrice": 647368.18
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ГК \"ФизТех\"         ",
+    "TotalPrice": 350211.41
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ИП Карачаров В.В.   ",
+    "TotalPrice": 1271921.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ИП Кахраманов Э.Б.  ",
+    "TotalPrice": 1672406.31324675
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Палекс              ",
+    "TotalPrice": 474985.73
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Кварц               ",
+    "TotalPrice": 1088031.91
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Райдос              ",
+    "TotalPrice": 1358278.85
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ИП Лебедева И.С.    ",
+    "TotalPrice": 448097.38
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"Петрикофф\"     ",
+    "TotalPrice": 192800.741512415
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "ООО \"МТА\"           ",
+    "TotalPrice": 523866.117849687
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "Феникс              ",
+    "TotalPrice": 350716.91
+  },
+  {
+    "ShipYear": 2015,
+    "SCity": null,
+    "SName": "eVolt               ",
+    "TotalPrice": 217330.77
+  }
+]
