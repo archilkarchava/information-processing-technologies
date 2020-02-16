@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as _ from 'lodash';
-import { DeepPartial, getRepository } from 'typeorm';
+import { Connection, DeepPartial } from 'typeorm';
 import Detail from '../entity/detail';
 import Provider from '../entity/provider';
 import Supply from '../entity/supply';
@@ -53,7 +53,10 @@ export default class DataProcessor {
 
   rawData: InputData;
 
-  constructor(inputFilePath: string) {
+  dbConnection: Connection;
+
+  constructor(dbConnection: Connection, inputFilePath: string) {
+    this.dbConnection = dbConnection;
     this.inputFilePath = inputFilePath;
     this.rawData = this.readJson();
   }
@@ -65,7 +68,7 @@ export default class DataProcessor {
   private static countProperty(arr: Array<Object>, mapKeyProperty: string) {
     const countMap = new Map<string, number>();
     _(arr)
-      .countBy(DataProcessor.fixStrValue(mapKeyProperty))
+      .countBy(mapKeyProperty)
       .forEach((count, name) => {
         if (name) {
           countMap.set(name, count);
@@ -81,7 +84,7 @@ export default class DataProcessor {
   ) {
     const sumMap = new Map<string, number>();
     _(arr)
-      .groupBy(DataProcessor.fixStrValue(mapKeyProperty))
+      .groupBy(mapKeyProperty)
       .forEach((objects, key) => {
         if (key) {
           sumMap.set(
@@ -119,7 +122,7 @@ export default class DataProcessor {
     ].reduce((prev, curr) =>
       prev[1].popularity > curr[1].popularity ? prev : curr,
     )[0];
-    const providerRepository = getRepository(Provider);
+    const providerRepository = this.dbConnection.getRepository(Provider);
     const providerSavePromises = data.S.map(rawProvider => {
       const provider: DeepPartial<Provider> = {
         id: Number(rawProvider.SID),
@@ -144,7 +147,7 @@ export default class DataProcessor {
     ].reduce((prev, curr) =>
       prev[1].popularity > curr[1].popularity ? prev : curr,
     )[0];
-    const detailRepository = getRepository(Detail);
+    const detailRepository = this.dbConnection.getRepository(Detail);
     const detailSavePromises = data.P.map(rawDetail => {
       if (!DataProcessor.fixStrValue(rawDetail.PName)) {
         return null;
@@ -165,7 +168,7 @@ export default class DataProcessor {
       };
       return detailRepository.save(detail);
     });
-    const supplyRepository = getRepository(Supply);
+    const supplyRepository = this.dbConnection.getRepository(Supply);
     const supplySavePromises = data.SP.map(rawSupply => {
       const supplyCity = data.P.find(
         rawDetail => rawDetail.PID === rawSupply.PID,
@@ -195,11 +198,12 @@ export default class DataProcessor {
       ...supplySavePromises,
     ]);
     console.log(
-      `Finished populating the database with data from ${this.inputFilePath}...`,
+      `Finished populating the database with data from ${this.inputFilePath}.`,
     );
   }
 
   private analyze() {
+    console.log(`Analyzing raw data from ${this.inputFilePath}...`);
     const data = this.removeNegativeValues();
     const providerCityCount = DataProcessor.countProperty(data.S, 'SCity');
     const providerCityRisk = DataProcessor.sumProperty(data.S, 'SCity', 'Risk');
@@ -240,8 +244,10 @@ export default class DataProcessor {
     detailCityCount.forEach((count, city) => {
       detailAnalysisMap.set(city, {
         popularity: count,
-        avgWeight: detailCityWeight.get(city) / count,
-        avgPrice: detailCityPrice.get(city) / supplyCityCount.get(city),
+        avgWeight: Number((detailCityWeight.get(city) / count).toFixed(2)),
+        avgPrice: Number(
+          (detailCityPrice.get(city) / supplyCityCount.get(city)).toFixed(2),
+        ),
         avgQuantity: Math.round(
           detailCityQuantity.get(city) / supplyCityCount.get(city),
         ),
