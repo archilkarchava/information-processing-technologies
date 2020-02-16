@@ -43,8 +43,12 @@ export default class DataProcessor {
 
   private static fixStrValue(str: string) {
     return str && str.length > 0
-      ? str.replace(/[^a-zA-Zа-яёА-ЯЁ 0-9 ,.?!&"'-]/g, '')
+      ? str.replace(/[^a-zA-Zа-яёА-ЯЁ 0-9,.?!&"'-]/g, '')
       : null;
+  }
+
+  private static parseDate(str: string) {
+    return str ? new Date(str.slice(0, 10)) : null;
   }
 
   public async populate() {
@@ -115,7 +119,7 @@ export default class DataProcessor {
           rawSupply.Quantity && Number(rawSupply.Quantity) > 0
             ? Number(rawSupply.Quantity)
             : dataAnalysis.detailAnalysisMap.get(supplyCity).avgQuantity,
-        shipDate: new Date(rawSupply.ShipDate),
+        shipDate: DataProcessor.parseDate(rawSupply.ShipDate),
         detail: { id: Number(rawSupply.PID) },
         provider: { id: Number(rawSupply.SID) },
       };
