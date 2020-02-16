@@ -65,7 +65,7 @@ export default class DataProcessor {
   private static countProperty(arr: Array<Object>, mapKeyProperty: string) {
     const countMap = new Map<string, number>();
     _(arr)
-      .countBy(DataProcessor.clearStr(mapKeyProperty))
+      .countBy(DataProcessor.fixStrValue(mapKeyProperty))
       .forEach((count, name) => {
         if (name) {
           countMap.set(name, count);
@@ -81,7 +81,7 @@ export default class DataProcessor {
   ) {
     const sumMap = new Map<string, number>();
     _(arr)
-      .groupBy(DataProcessor.clearStr(mapKeyProperty))
+      .groupBy(DataProcessor.fixStrValue(mapKeyProperty))
       .forEach((objects, key) => {
         if (key) {
           sumMap.set(
@@ -105,8 +105,10 @@ export default class DataProcessor {
     return data;
   }
 
-  private static clearStr(str: string) {
-    return str && str.replace(/[^a-zA-Zа-яА-Я0-9 ,.?!&"']/g, '');
+  private static fixStrValue(str: string) {
+    return str && str.length > 0
+      ? str.replace(/[^a-zA-Zа-яА-Я0-9 ,.?!&"']/g, '')
+      : null;
   }
 
   public async populate() {
@@ -121,18 +123,18 @@ export default class DataProcessor {
     const providerSavePromises = data.S.map(rawProvider => {
       const provider: DeepPartial<Provider> = {
         id: Number(rawProvider.SID),
-        address: DataProcessor.clearStr(rawProvider.Address),
+        address: DataProcessor.fixStrValue(rawProvider.Address),
         city: rawProvider.SCity
-          ? DataProcessor.clearStr(rawProvider.SCity)
+          ? DataProcessor.fixStrValue(rawProvider.SCity)
           : mostPopularProviderCity,
-        name: DataProcessor.clearStr(rawProvider.SName),
+        name: DataProcessor.fixStrValue(rawProvider.SName),
         risk:
           rawProvider.Risk &&
           Number(rawProvider.Risk) >= 1 &&
           Number(rawProvider.Risk) <= 3
             ? Number(rawProvider.Risk)
             : dataAnalysis.providerAnalysisMap.get(
-                DataProcessor.clearStr(rawProvider.SCity),
+                DataProcessor.fixStrValue(rawProvider.SCity),
               ).avgRisk,
       };
       return providerRepository.save(provider);
@@ -144,21 +146,21 @@ export default class DataProcessor {
     )[0];
     const detailRepository = getRepository(Detail);
     const detailSavePromises = data.P.map(rawDetail => {
-      if (!DataProcessor.clearStr(rawDetail.PName)) {
+      if (!DataProcessor.fixStrValue(rawDetail.PName)) {
         return null;
       }
       const detail: DeepPartial<Detail> = {
         id: Number(rawDetail.PID),
         city: rawDetail.PCity
-          ? DataProcessor.clearStr(rawDetail.PCity)
+          ? DataProcessor.fixStrValue(rawDetail.PCity)
           : mostPopularDetailCity,
-        color: DataProcessor.clearStr(rawDetail.Color),
-        name: DataProcessor.clearStr(rawDetail.PName),
+        color: DataProcessor.fixStrValue(rawDetail.Color),
+        name: DataProcessor.fixStrValue(rawDetail.PName),
         weight:
           rawDetail.Weight && Number(rawDetail.Weight) > 0
             ? Number(rawDetail.Weight)
             : dataAnalysis.detailAnalysisMap.get(
-                DataProcessor.clearStr(rawDetail.PCity),
+                DataProcessor.fixStrValue(rawDetail.PCity),
               ).avgWeight,
       };
       return detailRepository.save(detail);
@@ -208,7 +210,7 @@ export default class DataProcessor {
       'Weight',
     );
     const supplyTableWithPCity = data.SP.map(supply => {
-      const supplyCity = DataProcessor.clearStr(
+      const supplyCity = DataProcessor.fixStrValue(
         data.P.find(detail => detail.PID === supply.PID)?.PCity,
       );
       return { ...supply, PCity: supplyCity };
