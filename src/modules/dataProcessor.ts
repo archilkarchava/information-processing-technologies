@@ -7,24 +7,24 @@ import Supply from '../entity/supply';
 
 interface InputData {
   P: Array<{
-    PID: string;
+    PID: string | number;
     PName: string;
     PCity: string;
     Color: string;
     Weight: string;
   }>;
   S: Array<{
-    SID: string;
+    SID: string | number;
     SName: string;
     SCity: string;
     Address: string;
-    Risk: string;
+    Risk: string | number;
   }>;
   SP: Array<{
-    SPID: string;
-    PID: string;
-    SID: string;
-    Quantity: string;
+    SPID: string | number;
+    PID: string | number;
+    SID: string | number;
+    Quantity: string | number;
     Price: string;
     ShipDate: string;
   }>;
@@ -65,52 +65,9 @@ export default class DataProcessor {
     return JSON.parse(fs.readFileSync(this.inputFilePath, 'utf8'));
   }
 
-  private static countProperty(arr: Array<Object>, mapKeyProperty: string) {
-    const countMap = new Map<string, number>();
-    _(arr)
-      .countBy(mapKeyProperty)
-      .forEach((count, name) => {
-        if (name) {
-          countMap.set(name, count);
-        }
-      });
-    return countMap;
-  }
-
-  private static sumProperty(
-    arr: Array<Object>,
-    mapKeyProperty: string,
-    summedValueProperty: string,
-  ) {
-    const sumMap = new Map<string, number>();
-    _(arr)
-      .groupBy(mapKeyProperty)
-      .forEach((objects, key) => {
-        if (key) {
-          sumMap.set(
-            key,
-            _.sumBy(objects, obj => Number(obj[summedValueProperty])),
-          );
-        }
-      });
-    return sumMap;
-  }
-
-  // Removes entries with negative Weight, Quantity or Price
-  private removeNegativeValues() {
-    const data: InputData = {
-      S: this.rawData.S,
-      P: this.rawData.P.filter(detail => Number(detail.Weight) > 0),
-      SP: this.rawData.SP.filter(
-        supply => Number(supply.Quantity) > 0 && Number(supply.Price) > 0,
-      ),
-    };
-    return data;
-  }
-
   private static fixStrValue(str: string) {
     return str && str.length > 0
-      ? str.replace(/[^a-zA-Zа-яА-Я0-9 ,.?!&"']/g, '')
+      ? str.replace(/[^a-zA-Zа-яёА-ЯЁ 0-9 ,.?!&"'-]/g, '')
       : null;
   }
 
@@ -170,9 +127,11 @@ export default class DataProcessor {
     });
     const supplyRepository = this.dbConnection.getRepository(Supply);
     const supplySavePromises = data.SP.map(rawSupply => {
-      const supplyCity = data.P.find(
+      const rawSupplyCity = data.P.find(
         rawDetail => rawDetail.PID === rawSupply.PID,
       )?.PCity;
+      const supplyCity =
+        rawSupplyCity && DataProcessor.fixStrValue(rawSupplyCity);
       const supply: DeepPartial<Supply> = {
         id: Number(rawSupply.SPID),
         price:
@@ -200,6 +159,49 @@ export default class DataProcessor {
     console.log(
       `Finished populating the database with data from ${this.inputFilePath}.`,
     );
+  }
+
+  private static countProperty(arr: Array<Object>, mapKeyProperty: string) {
+    const countMap = new Map<string, number>();
+    _(arr)
+      .countBy(mapKeyProperty)
+      .forEach((count, name) => {
+        if (name) {
+          countMap.set(DataProcessor.fixStrValue(name), count);
+        }
+      });
+    return countMap;
+  }
+
+  private static sumProperty(
+    arr: Array<Object>,
+    mapKeyProperty: string,
+    summedValueProperty: string,
+  ) {
+    const sumMap = new Map<string, number>();
+    _(arr)
+      .groupBy(mapKeyProperty)
+      .forEach((objects, key) => {
+        if (key) {
+          sumMap.set(
+            DataProcessor.fixStrValue(key),
+            _.sumBy(objects, obj => Number(obj[summedValueProperty])),
+          );
+        }
+      });
+    return sumMap;
+  }
+
+  // Removes entries with negative Weight, Quantity or Price
+  private removeNegativeValues() {
+    const data: InputData = {
+      S: this.rawData.S,
+      P: this.rawData.P.filter(detail => Number(detail.Weight) > 0),
+      SP: this.rawData.SP.filter(
+        supply => Number(supply.Quantity) > 0 && Number(supply.Price) > 0,
+      ),
+    };
+    return data;
   }
 
   private analyze() {
