@@ -65,7 +65,7 @@ export default class DataProcessor {
   private static countProperty(arr: Array<Object>, mapKeyProperty: string) {
     const countMap = new Map<string, number>();
     _(arr)
-      .countBy(mapKeyProperty)
+      .countBy(DataProcessor.clearStr(mapKeyProperty))
       .forEach((count, name) => {
         if (name) {
           countMap.set(name, count);
@@ -81,7 +81,7 @@ export default class DataProcessor {
   ) {
     const sumMap = new Map<string, number>();
     _(arr)
-      .groupBy(mapKeyProperty)
+      .groupBy(DataProcessor.clearStr(mapKeyProperty))
       .forEach((objects, key) => {
         if (key) {
           sumMap.set(
@@ -106,7 +106,7 @@ export default class DataProcessor {
   }
 
   private static clearStr(str: string) {
-    return str && str.replace(/\uFFFD/g, '');
+    return str && str.replace(/[^a-zA-Zа-яА-Я0-9 ,.?!&"']/g, '');
   }
 
   public async populate() {
@@ -165,9 +165,9 @@ export default class DataProcessor {
     });
     const supplyRepository = getRepository(Supply);
     const supplySavePromises = data.SP.map(rawSupply => {
-      const supplyCity = DataProcessor.clearStr(
-        data.P.find(rawDetail => rawDetail.PID === rawSupply.PID)?.PCity,
-      );
+      const supplyCity = data.P.find(
+        rawDetail => rawDetail.PID === rawSupply.PID,
+      )?.PCity;
       const supply: DeepPartial<Supply> = {
         id: Number(rawSupply.SPID),
         price:
