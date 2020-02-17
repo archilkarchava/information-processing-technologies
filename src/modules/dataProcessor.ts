@@ -4,7 +4,7 @@ import { Connection, DeepPartial } from 'typeorm';
 import Detail from '../entity/detail';
 import Provider from '../entity/provider';
 import Supply from '../entity/supply';
-import RawJsonBranchData from '../interfaces/rawJsonBranchData';
+import RawJsonBranchData from '../shared_types/rawJsonBranchData';
 
 type ProviderCityAnalysis = Map<
   string,
