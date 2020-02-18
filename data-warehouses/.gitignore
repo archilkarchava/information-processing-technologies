@@ -38,3 +38,5 @@ lerna-debug.log*
 
 # Openned now in Excel
 /data/**/~$*
+
+.env
