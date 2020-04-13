@@ -8,7 +8,7 @@ import createTypeormConnection from './utils/createTypeormConnection';
 dotenv.config();
 
 async function main() {
-  const [dbConErr, conneciton] = await to(createTypeormConnection());
+  const [dbConErr, connection] = await to(createTypeormConnection());
   if (dbConErr) {
     throw dbConErr;
   }
@@ -25,7 +25,7 @@ async function main() {
   // Converter.xlsxToJson('./data/Branch_1.xlsx');
   // Converter.xlsxToJson('./data/Branch_2.xlsx');
   // const branch1Processor = new DataProcessor(
-  //   conneciton,
+  //   connection,
   //   './data/Branch_1.json',
   // );
   // const [branch1PopulateErr] = await to(branch1Processor.populate());
@@ -33,7 +33,7 @@ async function main() {
   //   throw branch1PopulateErr;
   // }
   // const branch2Processor = new DataProcessor(
-  //   conneciton,
+  //   connection,
   //   './data/Branch_2.json',
   // );
   // const branch1rawData: RawJsonBranchData = JSON.parse(
@@ -48,7 +48,7 @@ async function main() {
   // if (branch2PopulateErr) {
   //   throw branch2PopulateErr;
   // }
-  const reportGenerator = new ReportGenerator(conneciton);
+  const reportGenerator = new ReportGenerator(connection);
   const [reportQuery1Err] = await to(
     reportGenerator.generateReport1('./data/Report1.xlsx', {
       shipDate: { year: 2012 },
@@ -87,4 +87,7 @@ async function main() {
 
 main()
   .then(() => process.exit())
-  .catch(err => console.error(err));
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
