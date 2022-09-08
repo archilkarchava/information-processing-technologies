@@ -35,7 +35,7 @@
   "dependencies": {
     "await-to-js": "^2.1.1",
     "dotenv": "^8.2.0",
-    "jszip": "^3.2.2",
+    "jszip": "^3.7.0",
     "lodash": "^4.17.19",
     "pg": "^7.18.1",
     "reflect-metadata": "^0.1.13",
